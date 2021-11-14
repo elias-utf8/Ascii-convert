@@ -27,7 +27,7 @@ def main(new_width=100):
     try:
         image = PIL.Image.open(path)
     except:
-        print(path, " is not a valid pathname to an image.")
+        print(path, " chemin invalide.")
         return
   
     new_image_data = pixels_to_ascii(grayify(resize_image(image)))
